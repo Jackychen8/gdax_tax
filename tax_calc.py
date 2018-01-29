@@ -1,10 +1,11 @@
 import csv
 
-class t():
+class trades():
 
 	def __init__(self):
 		self.trans = {}
-		# use 'trade id'
+		# use 'trade id' as key
+
 
 	def load_csv(self, file_name):
 		with open(file_name, 'rb') as csvfile:
@@ -63,9 +64,9 @@ class t():
 			if type in item[1]:
 				print item
 
-# A.print_stats()
 # if __name__ == '__main__':
 # 	# calc tax
 # A = t()
 # A.load_csv('~/Downloads/eth_gdax_account.csv')
 # A.calc_p()
+# A.print_stats()
